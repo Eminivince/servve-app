@@ -4,11 +4,21 @@ import CountUp from 'react-countup'
 import {AiOutlinePlusCircle} from 'react-icons/ai'
 
 const Accordion = () => {
-    const [show, setShow] = useState(false)
+    const [show1, setShow1] = useState(true)
+    const [show2, setShow2] = useState(false)
+    const [show3, setShow3] = useState(false)
 
-    const handleSetShow = function(){
-        setShow(!show)
-        console.log("clicked")
+    const handleSetShow1 = function(){
+        setShow1(!show1)
+        
+    }
+    const handleSetShow2 = function(){
+        setShow2(!show2)
+        
+    }
+    const handleSetShow3 = function(){
+        setShow3(!show3)
+        
     }
 
   return (
@@ -17,37 +27,37 @@ const Accordion = () => {
             <h1 className="text-rose-600 font-semibold mb-3">Trusted Agency</h1>
             <h1 className="md:text-5xl text-3xl font-bold mb-3">Best Offered Services</h1>
             <p className='mb-8'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officia quisquam quaerat odit similique ut, in repudiandae dolore mollitia culpa.</p>
-            <div className='mb-7'>
+            <div className='mb-7' onClick={handleSetShow1}>
                 <div className='flex justify-between items-center mb-4'>
                     <h1 className='font-bold'>
                         Ensuring Masks
                     </h1>
-                    <AiOutlinePlusCircle className='text-2xl' onClick={handleSetShow}/>
+                    <AiOutlinePlusCircle className='text-2xl'/>
                 </div>
 
-                {show && <p className='w-[97%] text-justify'>TestLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae corrupti minima unde dolorum praesentium ab tempora ullam hic magni eveniet dolores quibusdam voluptas non at ducimus totam amet nobis vero nihil nesciunt, libero consequatur!</p>}
+                {show1 && <p className='w-[97%] text-justify'>TestLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae corrupti minima unde dolorum praesentium ab tempora ullam hic magni eveniet dolores quibusdam voluptas non at ducimus totam amet nobis vero nihil nesciunt, libero consequatur!</p>}
                 
             </div>
-            <div className='mb-7'>
+            <div className='mb-7' onClick={handleSetShow2}>
                 <div className='flex justify-between items-center mb-4'>
                     <h1 className='font-bold'>
-                        Ensuring Masks
+                        27/7 Support
                     </h1>
-                    <AiOutlinePlusCircle className='text-2xl' onClick={handleSetShow}/>
+                    <AiOutlinePlusCircle className='text-2xl'/>
                 </div>
 
-                {show && <p className='w-[97%] text-justify'>TestLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae corrupti minima unde dolorum praesentium ab tempora ullam hic magni eveniet dolores quibusdam voluptas non at ducimus totam amet nobis vero nihil nesciunt, libero consequatur!</p>}
+                {show2 && <p className='w-[97%] text-justify'>TestLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae corrupti minima unde dolorum praesentium ab tempora ullam hic magni eveniet dolores quibusdam voluptas non at ducimus totam amet nobis vero nihil nesciunt, libero consequatur!</p>}
                 
             </div>
-            <div className='mb-7'>
+            <div className='mb-7' onClick={handleSetShow3}>
                 <div className='flex justify-between items-center mb-4'>
                     <h1 className='font-bold'>
-                        Ensuring Masks
+                        Sanitazing Hands
                     </h1>
-                    <AiOutlinePlusCircle className='text-2xl' onClick={handleSetShow}/>
+                    <AiOutlinePlusCircle className='text-2xl' />
                 </div>
 
-                {show && <p className='w-[97%] text-justify'>TestLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae corrupti minima unde dolorum praesentium ab tempora ullam hic magni eveniet dolores quibusdam voluptas non at ducimus totam amet nobis vero nihil nesciunt, libero consequatur!</p>}
+                {show3 && <p className='w-[97%] text-justify'>TestLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae corrupti minima unde dolorum praesentium ab tempora ullam hic magni eveniet dolores quibusdam voluptas non at ducimus totam amet nobis vero nihil nesciunt, libero consequatur!</p>}
                 
             </div>
             
