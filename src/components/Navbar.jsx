@@ -10,7 +10,7 @@ const Navbar = () => {
                 <div className='logo'>
                     <img src={Logo} alt='gearlogo' />
                 </div>
-                <div className='links'>
+                <div className='links hidden md:block'>
                     <ul className='flex space-x-6'>
                         <li><a href='#'>Home</a></li>
                         <li><a href='#'>About Us</a></li>
@@ -21,7 +21,7 @@ const Navbar = () => {
                     </ul>
 
                 </div>
-                <div className='acctncontact flex space-x-6 items-center'>
+                <div className='acctncontact space-x-6 items-center hidden md:flex'>
                     <div className='callus flex items-center space-x-3'>
                         <img src={Phone} alt='phone' className='w-6 h-6' />
                         <div>

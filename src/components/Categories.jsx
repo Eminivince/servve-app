@@ -42,8 +42,8 @@ const Categories = () => {
     ]
 
     const ourServices = categoriesData.map(function (categoriesData) {
-        return <div>
-            <img src={categoriesData.image} alt={categoriesData.Service} />
+        return <div className='mb-6 md:mb-0'>
+            <img src={categoriesData.image} alt={categoriesData.Service}  className='w-[100%]'/>
             <h1 className='bg-rose-600 text-center p-4 text-white font-semibold'>{categoriesData.Service}</h1>
 
         </div>
@@ -51,13 +51,13 @@ const Categories = () => {
 
     return (
 
-        <div className='px-28 pb-16'>
+        <div className='md:px-28 px-6 pb-16'>
             <h1 className='mb-3 font-semibold text-rose-600'>Category</h1>
-            <div className='mb-8 font-bold text-5xl'>
+            <div className='mb-8 font-bold md:text-5xl text-4xl'>
                 <h1>See All Our Creative Services</h1>
             </div>
 
-            <div className='flex space-x-5'>
+            <div className='md:flex md:space-x-5'>
                 {ourServices}
             </div>
         </div>

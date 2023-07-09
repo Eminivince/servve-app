@@ -38,14 +38,14 @@ const Popular = () => {
   const popularServices = servicesData.map(function (servicesData) {
     return <div className='py-4'>
 
-<div>
+<div className='border rounded-lg'>
           <div>
             <div className='relative'>
               <h1 className='bg-rose-600 w-fit p-2 rounded-lg text-white absolute right-2 top-2'>{servicesData.Service}</h1>
               <img src={servicesData.image} alt="green" className='rounded-lg mb-6 w-[100%]'/>
             </div>
             
-            <div className='flex items-center space-x-4 mb-5'>
+            <div className='flex items-center space-x-4 mb-5 px-4 pb-4'>
             <div>
             <img src={servicesData.author} alt='authorserve ' />
             </div>
@@ -68,6 +68,7 @@ const Popular = () => {
             
             
           </div>
+          <div className="px-4 pb-4">
           <h1 className='text-lg font-semibold mb-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta.</h1>
           <div className='flex justify-between items-center'>
             <div>
@@ -78,6 +79,9 @@ const Popular = () => {
               <BsFillArrowRightCircleFill  className='text-rose-600 font-bold'/>
             </div>
           </div>
+          </div>
+          
+
         </div>
         
 
@@ -85,19 +89,19 @@ const Popular = () => {
 })
 
   return (
-    <div className='px-28 pb-16'>
+    <div className='md:px-28 px-6 pb-16'>
         <div>
           <h1 className='mb-4 text-rose-600 font-semibold'>Services</h1>
-          <div className='flex justify-between'>
-            <h1 className='text-5xl font-bold mb-8'>Our Popular Services</h1>
-            <div className='flex items-center space-x-3'>
+          <div className='md:flex justify-between'>
+            <h1 className='md:text-5xl text-3xl font-bold mb-8'>Our Popular Services</h1>
+            <div className='flex items-center md:space-x-3'>
               <h1 className=' text-rose-600'>View All Services</h1>
               <BsFillArrowRightCircleFill className='text-rose-600 font-bold'/>
             </div>
           </div>
         </div>
 
-      <div className='flex space-x-5'>
+      <div className='md:flex md:space-x-5'>
       {popularServices}
       </div>
       

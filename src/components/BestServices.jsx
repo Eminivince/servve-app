@@ -1,34 +1,34 @@
 import React from 'react'
-import Service4 from '../Images/service-4.jpg'
-import Service5 from '../Images/service-5.jpg'
-import Service6 from '../Images/service-6.jpg'
 import {BsFillArrowRightCircleFill} from 'react-icons/bs'
 import {BiSolidStar} from 'react-icons/bi'
+import Service7 from '../Images/service-7.jpg'
+import Service8 from '../Images/service-8.jpg'
+import Service9 from '../Images/service-99.jpg'
 import author4 from '../Images/service-author-4.png'
 import author5 from '../Images/service-author-5.png'
 import author6 from '../Images/service-author-6.png'
+import {AiOutlineHeart} from 'react-icons/ai'
 
-
-const ForHome = () => {
+const BestServices = () => {
 
   const servicesData = [
     {
-        Service: "Spa and Beauty",
-        image: Service4,
+        discount: "45% OFF",
+        image: Service7,
         items: 75,
         company: "Egens Lab",
         author: author4
     },
     {
-        Service: "House Sift",
-        image: Service5,
+        discount: "60% OFF",
+        image: Service8,
         items: 80,
         company: "Finibus",
         author: author5
     },
     {
-        Service: "Electrician",
-        image: Service6,
+        discount: "50% OFF",
+        image: Service9,
         items: 200,
         company: "Creatus",
         author: author6
@@ -41,10 +41,12 @@ const ForHome = () => {
 <div className='border rounded-lg'>
           <div>
           <div className='relative'>
-              <h1 className='bg-rose-600 w-fit p-2 rounded-lg text-white absolute right-2 top-2'>{servicesData.Service}</h1>
+              <h1 className='bg-rose-600 w-fit p-2 rounded-lg text-white absolute right-2 top-2'>{servicesData.discount}</h1>
               <img src={servicesData.image} alt="green" className='rounded-lg mb-6 w-[100%]'/>
             </div>
-            <div className='flex items-center space-x-4 mb-5 px-4 pb-4'>
+
+            <div className='flex items-center justify-between px-4'>
+            <div className='flex items-center space-x-4 mb-5'>
             <div>
             <img src={servicesData.author} alt='authorserve' />
             </div>
@@ -63,11 +65,19 @@ const ForHome = () => {
             </div>
             </div>
             </div>
+            <div className='bg-rose-600 p-1 rounded-full'>
+            <AiOutlineHeart  className='text-lg font-bold text-white'/>
+            </div>
+
+            
+            </div>
+
+            
 
             
             
           </div>
-          <div className="px-4 pb-4">
+          <div className='px-4 pb-4'>
           <h1 className='text-lg font-semibold mb-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta.</h1>
           <div className='flex justify-between items-center'>
             <div>
@@ -87,11 +97,11 @@ const ForHome = () => {
 })
 
   return (
-    <div className='md:px-28 px-6 pb-16'>
+    <div className='md:px-28 px-6 pb-16 mt-10'>
         <div>
-          <h1 className='mb-4 text-rose-600 font-semibold'>Services</h1>
+          <h1 className='mb-4 text-rose-600 font-semibold'>Offered</h1>
           <div className='md:flex justify-between'>
-            <h1 className='md:text-5xl text-3xl font-bold mb-8'>For Your Fome</h1>
+            <h1 className='md:text-5xl text-3xl font-bold mb-8'>Best Offered Services</h1>
             <div className='flex items-center space-x-3'>
               <h1 className=' text-rose-600'>View All Services</h1>
               <BsFillArrowRightCircleFill className='text-rose-600 font-bold'/>
@@ -108,4 +118,4 @@ const ForHome = () => {
   )
 }
 
-export default ForHome
+export default BestServices

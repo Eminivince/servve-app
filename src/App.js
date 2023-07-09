@@ -1,4 +1,5 @@
 import './App.css';
+import BestServices from './components/BestServices';
 import Categories from './components/Categories';
 import ForHome from './components/ForHome';
 import Popular from './components/Popular';
@@ -14,6 +15,7 @@ function App() {
       <Popular />
       <ForHome />
       <Shop />
+      <BestServices />
     </div>
   );
 }
