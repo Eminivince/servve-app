@@ -1,5 +1,6 @@
 import React from 'react'
 import WorkImage from '../Images/work-video-thumb.jpg'
+import {AiFillPlayCircle} from 'react-icons/ai'
 
 const HowItWorks = () => {
   return (
@@ -36,9 +37,16 @@ const HowItWorks = () => {
                 </div>
             </div>
             <div className='basis-1/2 relative'>
-                <div className='h-[30%] w-[30%] bg-rose-500 rounded-lg absolute -top-6 md:-right-2 right-0 -z-40' />
-                <img src={WorkImage} alt="workimage" className='rounded-lg md:w-[94%] w-[90%] mx-auto z-50' />
-                <div className='h-[30%] w-[30%] bg-rose-500 rounded-lg absolute -bottom-4 md:-left-3 left-0 -z-40' />
+                <div className='h-[30%] w-[30%] bg-gradient-to-bl from-rose-600 to-white rounded-lg absolute -top-6 md:-right-2 right-0 -z-40' />
+                <div className='relative'>
+                    <img src={WorkImage} alt="workimage" className='rounded-lg md:w-[94%] w-[90%] mx-auto z-40' />
+                    <div className='bg-rose-600 rounded-full absolute z-50 animate-ping top-[50%] right-[50%]'>
+                        <AiFillPlayCircle  className='text-3xl text-white'/>
+                    </div>
+                    
+                </div>
+                
+                <div className='h-[30%] w-[30%] bg-gradient-to-tr from-rose-600 to-white rounded-lg absolute -bottom-4 md:-left-3 left-0 -z-40' />
             </div>
         </div>
         
