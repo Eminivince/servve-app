@@ -1,53 +1,52 @@
 import React from 'react'
-import Service1 from '../Images/service-1.jpg'
-import Service2 from '../Images/service-2.jpg'
-import Service3 from '../Images/service-3.jpg'
+import Service4 from '../Images/service-4.jpg'
+import Service5 from '../Images/service-5.jpg'
+import Service6 from '../Images/service-6.jpg'
 import {BsFillArrowRightCircleFill} from 'react-icons/bs'
 import {BiSolidStar} from 'react-icons/bi'
-import author1 from '../Images/service-author-1.png'
-import author2 from '../Images/service-author-2.png'
-import author3 from '../Images/service-author-3.png'
+import author4 from '../Images/service-author-4.png'
+import author5 from '../Images/service-author-5.png'
+import author6 from '../Images/service-author-6.png'
 
 
-const Popular = () => {
+const ForHome = () => {
 
   const servicesData = [
     {
-        Service: "Salon",
-        image: Service1,
+        Service: "Spa and Beauty",
+        image: Service4,
         items: 75,
         company: "Egens Lab",
-        author: author1
+        author: author4
     },
     {
-        Service: "Cleaning",
-        image: Service2,
+        Service: "House Sift",
+        image: Service5,
         items: 80,
         company: "Finibus",
-        author: author2
+        author: author5
     },
     {
-        Service: "AC Repair",
-        image: Service3,
+        Service: "Electrician",
+        image: Service6,
         items: 200,
         company: "Creatus",
-        author: author3
+        author: author6
     },
   ]
 
-  const popularServices = servicesData.map(function (servicesData) {
+  const homeServices = servicesData.map(function (servicesData) {
     return <div className='py-4'>
 
 <div>
           <div>
-            <div className='relative'>
+          <div className='relative'>
               <h1 className='bg-rose-600 w-fit p-2 rounded-lg text-white absolute right-2 top-2'>{servicesData.Service}</h1>
               <img src={servicesData.image} alt="green" className='rounded-lg mb-6 w-[100%]'/>
             </div>
-            
             <div className='flex items-center space-x-4 mb-5'>
             <div>
-            <img src={servicesData.author} alt='authorserve ' />
+            <img src={servicesData.author} alt='authorserve' />
             </div>
             <div>
             <div>{servicesData.company}</div>
@@ -89,7 +88,7 @@ const Popular = () => {
         <div>
           <h1 className='mb-4 text-rose-600 font-semibold'>Services</h1>
           <div className='flex justify-between'>
-            <h1 className='text-5xl font-bold mb-8'>Our Popular Services</h1>
+            <h1 className='text-5xl font-bold mb-8'>For Your Fome</h1>
             <div className='flex items-center space-x-3'>
               <h1 className=' text-rose-600'>View All Services</h1>
               <BsFillArrowRightCircleFill className='text-rose-600 font-bold'/>
@@ -98,7 +97,7 @@ const Popular = () => {
         </div>
 
       <div className='flex space-x-5'>
-      {popularServices}
+      {homeServices}
       </div>
       
 
@@ -106,4 +105,4 @@ const Popular = () => {
   )
 }
 
-export default Popular
+export default ForHome

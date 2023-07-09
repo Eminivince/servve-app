@@ -5,8 +5,8 @@ import Heart from '../Images/heart.png'
 
 const Navbar = () => {
     return (
-        <div className='fixed top-0 left-0 right-0 bottom-0'>
-            <nav className='flex fixedflex-row justify-between pt-6 px-6 items-center font-semibold'>
+        <div>
+            <nav className='flex flex-row justify-between pt-6 px-6 items-center font-semibold'>
                 <div className='logo'>
                     <img src={Logo} alt='gearlogo' />
                 </div>
