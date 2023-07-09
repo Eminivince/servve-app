@@ -24,9 +24,9 @@ const Hero = () => {
 
                         </div>
 
-                        <div className='flex'>
-                            <input type='text' placeholder='Find your services Here' className='px-4 rounded-lg text-sm' />
-                            <div className='bg-rose-600 p-3 rounded-xl'>
+                        <div className='relative w-fit'>
+                            <input type='text' placeholder='Find your services Here' className='py-3 pl-6 pr-12 rounded-lg text-md my-auto ' />
+                            <div className='bg-rose-600 p-2 rounded-xl w-fit absolute top-1 right-1 '>
 
                                 <FaSearch className='text-white text-2xl' />
 

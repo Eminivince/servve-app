@@ -2,10 +2,20 @@ import React from 'react'
 import Logo from '../Images/logo.svg'
 import Phone from '../Images/phone-call.png'
 import Heart from '../Images/heart.png'
+import {GiHamburgerMenu} from 'react-icons/gi'
+import { useState } from 'react'
+import CountUp from 'react-countup'
 
 const Navbar = () => {
+    const [navbar, setNavbar] = useState(true)
+
+    const handleSetNavbar = function(){
+        setNavbar(!navbar)
+        console.log("Nave")
+    }
+
     return (
-        <div>
+        <div className='relative'>
             <nav className='flex flex-row justify-between pt-6 px-6 items-center font-semibold'>
                 <div className='logo'>
                     <img src={Logo} alt='gearlogo' />
@@ -34,6 +44,7 @@ const Navbar = () => {
                     '>My Account</button>
                 </div>
             </nav>
+            <GiHamburgerMenu className='absolute md:hidden right-6 top-6 text-3xl' onClick={handleSetNavbar}/>
         </div>
     )
 }

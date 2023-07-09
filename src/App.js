@@ -1,4 +1,5 @@
 import './App.css';
+import Accordion from './components/Accordion';
 import BestServices from './components/BestServices';
 import Categories from './components/Categories';
 import ForHome from './components/ForHome';
@@ -16,6 +17,7 @@ function App() {
       <ForHome />
       <Shop />
       <BestServices />
+      <Accordion />
     </div>
   );
 }

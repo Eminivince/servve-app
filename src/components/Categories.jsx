@@ -43,8 +43,11 @@ const Categories = () => {
 
     const ourServices = categoriesData.map(function (categoriesData) {
         return <div className='mb-6 md:mb-0'>
+            <div className=''>
             <img src={categoriesData.image} alt={categoriesData.Service}  className='w-[100%]'/>
             <h1 className='bg-rose-600 text-center p-4 text-white font-semibold'>{categoriesData.Service}</h1>
+            </div>
+            
 
         </div>
     })
