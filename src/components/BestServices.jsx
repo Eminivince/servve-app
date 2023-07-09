@@ -38,7 +38,7 @@ const BestServices = () => {
   const homeServices = servicesData.map(function (servicesData) {
     return <div className='py-4'>
 
-<div className='border rounded-lg'>
+<div className='border rounded-lg shadow-xl'>
           <div>
           <div className='relative'>
               <h1 className='bg-rose-600 w-fit p-2 rounded-lg text-white absolute right-2 top-2'>{servicesData.discount}</h1>

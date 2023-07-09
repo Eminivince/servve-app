@@ -55,7 +55,7 @@ const Accordion = () => {
 
         <div className='flex flex-col items-end'>
             <h1 className='md:text-4xl text-3xl font-bold mb-6 text-gray-100'>WHY CHOOSE US</h1>
-            <div className='w-[100%] h-[100%] md:grid  md:grid-cols-2 text-center rounded-xl border-2'>
+            <div className='w-[100%] h-[100%] md:grid  md:grid-cols-2 text-center rounded-xl border shadow-xl'>
                 <div className='md:border-r border-b p-16'>
                     <div className='text-3xl font-bold text-rose-600 mb-1'>
                     <span>+</span>

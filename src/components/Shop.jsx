@@ -41,7 +41,7 @@ const Shop = () => {
 
       const ourShops = shopData.map(function(shopData){
         return <div className='w-[100%] mb-6 md:mb-0'>
-            <div className='flex flex-col items-center p-7 bg-white border-2 rounded-lg'>
+            <div className='flex flex-col items-center p-7 bg-white  rounded-lg shadow-xl'>
                 <div className='rounded-full h-36 w-36 flex mb-6 border'>
                     <img src={shopData.image} alt='shop' className=' mx-auto my-auto'/>
                 </div>
