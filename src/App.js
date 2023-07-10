@@ -1,6 +1,7 @@
 import './App.css';
 import Accordion from './components/Accordion';
 import BestServices from './components/BestServices';
+import Blog from './components/Blog';
 import Categories from './components/Categories';
 import ForHome from './components/ForHome';
 import HowItWorks from './components/HowItWorks';
@@ -22,6 +23,7 @@ function App() {
       <Accordion />
       <Testimonial />
       <HowItWorks />
+      <Blog />
     </div>
   );
 }
