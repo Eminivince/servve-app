@@ -34,13 +34,13 @@ const Blog = () => {
   const blogPosts = blogsData.map(function (blogsData) {
     return <div>
         <>
-            <div>
+            <div className='mb-6 md:mb-0'>
                 <img src={blogsData.image} alt='pic' className='w-[100%] ' />
                 <div className='flex space-x-3 mt-5 items-center text-rose-600 mb-2'>
                     <BsCalendarWeekFill />
                     <h1 className='font-semibold'>{blogsData.date}</h1>
                 </div>
-                <h1 className='font-bold text-xl mb-5'>{blogsData.desc}</h1>
+                <h1 className='font-bold md:text-xl text-lg md:mb-5 mb-3'>{blogsData.desc}</h1>
                 <div className='flex items-center space-x-3'>
                     <h1 className='font-bold text-rose-600'>Read More</h1>
                     <BsFillArrowRightCircleFill className='text-rose-600 font-bold'/>
@@ -57,15 +57,15 @@ const Blog = () => {
         <div>
           <h1 className='mb-4 text-rose-600 font-semibold'>Blog Post</h1>
           <div className='md:flex justify-between'>
-            <h1 className='md:text-5xl text-3xl font-bold mb-8'>Our Latest Post</h1>
+            <h1 className='md:text-5xl text-4xl font-bold mb-8'>Our Latest Post</h1>
             <div className='flex items-center space-x-3'>
-              <h1 className=' text-rose-600'>View All Posts</h1>
+              <h1 className=' text-rose-600 mb-4 md:mb-0'>View All Posts</h1>
               <BsFillArrowRightCircleFill className='text-rose-600 font-bold'/>
             </div>
           </div>
         </div>
 
-      <div className='flex space-x-5'>
+      <div className='md:flex md:space-x-6'>
       {blogPosts}
       </div>
 
