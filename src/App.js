@@ -3,6 +3,7 @@ import Accordion from './components/Accordion';
 import BestServices from './components/BestServices';
 import Blog from './components/Blog';
 import Categories from './components/Categories';
+import { Footer } from './components/Footer';
 import ForHome from './components/ForHome';
 import HowItWorks from './components/HowItWorks';
 import Popular from './components/Popular';
@@ -24,6 +25,7 @@ function App() {
       <Testimonial />
       <HowItWorks />
       <Blog />
+      <Footer />
     </div>
   );
 }

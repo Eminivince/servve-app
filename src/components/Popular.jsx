@@ -38,10 +38,10 @@ const Popular = () => {
   const popularServices = servicesData.map(function (servicesData) {
     return <div className='py-4'>
 
-<div className='border rounded-lg shadow-xl'>
+<div className='border rounded-lg shadow-xl cursor-pointer'>
           <div>
             <div className='relative'>
-              <h1 className='bg-rose-600 w-fit p-2 rounded-lg text-white absolute right-2 top-2'>{servicesData.Service}</h1>
+              <h1 className='bg-rose-600 w-fit p-2 hover:bg-rose-900 duration-300 rounded-lg text-white absolute right-2 top-2'>{servicesData.Service}</h1>
               <img src={servicesData.image} alt="green" className='rounded-lg mb-6 w-[100%]'/>
             </div>
             
@@ -95,7 +95,7 @@ const Popular = () => {
           <div className='md:flex justify-between'>
             <h1 className='md:text-5xl text-3xl font-bold mb-8'>Our Popular Services</h1>
             <div className='flex items-center md:space-x-3'>
-              <h1 className=' text-rose-600'>View All Services</h1>
+              <h1 className=' text-rose-600 cursor-pointer'>View All Services</h1>
               <BsFillArrowRightCircleFill className='text-rose-600 font-bold'/>
             </div>
           </div>

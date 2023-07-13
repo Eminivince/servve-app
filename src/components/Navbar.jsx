@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className='relative'>
             <nav className='flex flex-row justify-between pt-6 px-6 items-center font-semibold'>
                 <div className='logo'>
-                    <img src={Logo} alt='gearlogo' />
+                    <img src={Logo} alt='gearlogo' className='cursor-pointer' />
                 </div>
                 <div className='links hidden md:block'>
                     <ul className='flex space-x-6'>
@@ -40,7 +40,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <img src={Heart} className='w-6 h-6' alt='heartfave' />
-                    <button type='button ' className='py-3 px-5 bg-rose-600 rounded-3xl text-white
+                    <button type='button ' className='py-3 px-5 bg-rose-600 hover:bg-rose-900 duration-300 rounded-3xl text-white
                     '>My Account</button>
                 </div>
             </nav>
